@@ -155,5 +155,6 @@ function   printFailure($message = "none")
 function sendEmail($to , $title , $body){
 $header = "From: support@waheedhnblaas.com " . "\n" . "CC: waheedhnblaas@gmail.com" ; 
 mail($to , $title , $body , $header) ;  
+
 }
 ?>
