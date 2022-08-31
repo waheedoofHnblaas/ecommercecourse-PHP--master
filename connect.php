@@ -1,7 +1,8 @@
 <?php
-$dsn = "mysql:host=localhost;dbname=ecommercecourse";
-$user = "root";
-$pass = "root";
+$dsn = "mysql:host=localhost;dbname=id19454951_ecommerce";
+$user = "id19454951_waheed";
+$pass = "s?pxdMNRJtIx6zNu";
+
 $option = array(
    PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8"
 );
@@ -12,10 +13,13 @@ try {
    header("Access-Control-Allow-Origin: *");
    header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With, Access-Control-Allow-Origin");
    header("Access-Control-Allow-Methods: POST, OPTIONS , GET");
-   include "./functions.php";
+   include "functions.php";
    if (!isset($notAuth)) {
       // checkAuthenticate();
    }
 } catch (PDOException $e) {
    echo $e->getMessage();
 }
+//$dsn = "mysql:host=files.000webhost.com:21;dbname=id19454951_ecommerce";
+//$user = "phpddd";
+//$pass = "waheedoof@1234";
